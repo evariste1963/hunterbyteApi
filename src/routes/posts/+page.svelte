@@ -3,8 +3,8 @@
 </script>
 
 <div>
-	{#each data.posts as posts}
-		<h1>{posts.title}</h1>
-		<p>{posts.body}</p>
+	{#each data.posts as post}
+		<h1>{post.title}</h1>
+		<p>{post.body}</p>
 	{/each}
 </div>

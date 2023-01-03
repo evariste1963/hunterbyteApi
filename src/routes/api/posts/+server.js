@@ -18,7 +18,7 @@ export const GET = async ({ request, url }) => {
 export const POST = async ({ request }) => {
 	const authHeader = request.headers.get('Authorisation');
 	const body = await request.json();
-
+	console.log({ body });
 	if (authHeader !== 'Myauthheader') {
 		return new Response(JSON.stringify({ message: 'invalid credentials' }), { status: 401 });
 	}
